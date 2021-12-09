@@ -480,7 +480,7 @@ $(document).ready(function()
       crossDomain: true,
       success:function(data){
           console.log(data);
-          /*if(data.status == 'success')
+          if(data.status == 'success')
           { 
                   
             swal({
@@ -496,8 +496,26 @@ $(document).ready(function()
             }, 2000);
             $this.removeAttr("disabled");     
            
-          }*/
+          }
+          else
+          {
+            swal({
+              title: "Response already accepted or your response is already lapsed!",
+          
+              icon: "error",
+              });
         
+  
+              setTimeout(function() {
+                  location.reload();
+              $this.html($this.data('original-text'));
+              }, 2000);
+              $this.removeAttr("disabled");     
+
+            
+
+          }
+         
       
           
       }, error: 
