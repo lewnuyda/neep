@@ -36,13 +36,13 @@
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="neep_expert_response" id="neep_expert_response" value="1" >
                 <label class="form-check-label" for="neep_expert_response">
-                    Accept
+                    Accepted
                 </label>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="neep_expert_response" id="neep_expert_response" value="2">
                 <label class="form-check-label" for="neep_expert_response">
-                    Decline
+                    Declined
                 </label>
             </div>
             <hr>
